@@ -80,6 +80,57 @@ cd STAR-log-parser
 pip install -r requirements.txt
 ```
 
+## Running the Script Step-by-Step
+
+### 1. Open your terminal
+Navigate to the folder where your script `star_mapping_summary.py` is located:
+
+```bash
+cd STAR-log-parser
+```
+
+### 2. Prepare a folder with your STAR log files
+Create a folder to store your STAR *_Log.final.out files:
+
+```bash
+mkdir STAR-logs
+```
+
+Then copy or move all your STAR log files into this folder:
+```text
+STAR-log-parser/
+│
+├─ STAR-logs/
+│   ├─ sample1_Log.final.out
+│   ├─ sample2_Log.final.out
+│   └─ sample3_Log.final.out
+├─ star_mapping_summary.py
+└─ README.md
+```
+
+### 3. Run the script
+
+You can run the script in two ways:
+
+Using a relative path (recommended):
+```bash
+python star_mapping_summary.py STAR-logs --output_file summary.xlsx --plot_file mapping.png --show_plot
+```
+
+Using an absolute path:
+```bash
+python star_mapping_summary.py "C:/path/to/your/STAR-logs" --output_file summary.xlsx --plot_file mapping.png --show_plot
+```
+
+### 4. Check the output
+
+After running the script, you should see the following results:
+```text
+summary.xlsx    # Excel file with mapping statistics
+mapping.png     # Bar plot (if specified)
+# Plot displayed on-screen if --show_plot is used
+```
+
 ### Notes / Important Considerations
 ```text
 - Ensure that all STAR Log.final.out files are in the same directory.
