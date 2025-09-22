@@ -45,8 +45,8 @@ python star_mapping_summary.py STAR_logs --output_file summary.xlsx --plot_file 
 
 ### Output
 ```text
-summary.xlsx            # Excel file summarizing mapping statistics
-mapping.png             # Optional bar plot showing mapping percentages per sample
+Summary saved to: summary.xlsx          # Excel file summarizing mapping statistics
+Plot saved to: mapping.png              # Optional bar plot showing mapping percentages per sample
 # Plot displayed in a window if --show_plot is used
 ```
 
