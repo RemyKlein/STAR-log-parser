@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 """
 STAR Log.final.out Parser & Visualization
 Author: Rémy Klein
@@ -15,9 +12,6 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# -------------------------------
-# Functions
-# -------------------------------
 def parse_star_file(file_path):
     """
     Parse a STAR Log.final.out file and extract relevant statistics.
@@ -79,9 +73,6 @@ def plot_mapping_summary(df, show_plot=True, save_path=None):
         plt.show()
     plt.close()
 
-# -------------------------------
-# Main
-# -------------------------------
 def main():
     parser = argparse.ArgumentParser(
         description="Parse STAR Log.final.out files, save a summary Excel file, and optionally plot mapping statistics."
